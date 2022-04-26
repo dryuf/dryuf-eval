@@ -68,7 +68,7 @@ public class CustomizableEvaluatorFactoryBenchmark
 	@Benchmark
 	public void benchmark2_evaluate(Blackhole blackhole) throws IOException
 	{
-		Long value = expression.evaluate(new NullContext<>());
+		Long value = expression.evaluate(new NullContext<Long>());
 		blackhole.consume(value);
 	}
 
